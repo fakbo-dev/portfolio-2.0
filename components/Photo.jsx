@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profilePic from "@/assets/gp.jpg"
+import profilePic from "@/public/assets/gp.jpg"
 const Photo = () => {
     return (
         <div className="w-full h-full relative">
