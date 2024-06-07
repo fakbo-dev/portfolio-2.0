@@ -13,7 +13,7 @@ function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Desarrollador de Software</span>
+            <span className="text-xl">Desarrollador Frontend</span>
             <h1 className="h1">Hola Soy <br /><span className="text-accent">Mauricio Oropeza</span></h1>
             <p className="max-w-[500px] mb-9 text-white/80">apasionado de la creación de experiencias digitales impactantes, poseo habilidades sólidas en diversos lenguajes de programación y tecnologías. Mi capacidad de aprendizaje es excepcional, lo que me permite adaptarme rápidamente a nuevas herramientas y tecnologías emergentes. Estoy emocionado por dar vida a futuros proyectos y colaborar en su desarrollo de manera innovadora y efectiva.</p>
             {/* Btn and socials */}
