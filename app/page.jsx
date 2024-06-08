@@ -10,7 +10,7 @@ function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between  xl:pb-4">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Desarrollador Frontend</span>

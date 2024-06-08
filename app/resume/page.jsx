@@ -4,14 +4,14 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript, SiRedux } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
-
 // Component
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { motion } from "framer-motion"
 
-const about = {
+
+export const about = {
     title: "Sobre mi",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quis!",
     info: [
@@ -48,6 +48,7 @@ const about = {
 
     ]
 }
+
 
 const experience = {
     title: "Experiencia",
