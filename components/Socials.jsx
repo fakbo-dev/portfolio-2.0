@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedin, FaTwitter, FaDiscord, } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter, FaDiscord, FaWhatsapp, } from "react-icons/fa"
 
 
 const socials = [
     { icon: <FaGithub />, path: "https://github.com/fakbo-dev" },
-    { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/fakbodev-oropeza-54a734312/" },
-    { icon: <FaTwitter />, path: "" },
-    { icon: <FaDiscord />, path: "" },
+    { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/mauricio-oropeza-fakbo-dev" },
+    { icon: <FaTwitter />, path: "https://x.com/fakboDev" },
+    { icon: <FaWhatsapp />, path: "https://wa.me/584123550465" },
 ]
 const Socials = ({ containerStyles, iconStyle }) => {
     return (
