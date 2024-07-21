@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profilePic from "@/public/assets/gp.jpg"
+import profilePic from "@/public/assets/profile2.jpg"
 const Photo = () => {
     return (
         <div className="w-full h-full relative">
@@ -19,7 +19,7 @@ const Photo = () => {
                         quality={100}
                         fill
                         alt=""
-                        className="object-contain rounded-full"
+                        className="object-cover rounded-full"
                     />
                 </motion.div>
 
