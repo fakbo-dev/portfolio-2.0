@@ -31,9 +31,6 @@ const projects = [
             {
                 name: "nextjs"
             },
-            {
-                name: "shadcn ui"
-            },
         ],
         image: Image1,
         github: "https://github.com/fakbo-dev/D.O.N-Oscar-Landing-Page",
