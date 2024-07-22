@@ -13,7 +13,7 @@ import { motion } from "framer-motion"
 
 export const about = {
     title: "Sobre mi",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quis!",
+    description: "esta es una descripcion mis datos, para tener una idea de quien esta detras del desarrollo.",
     info: [
         {
             fieldName: "Nombre",
@@ -52,7 +52,7 @@ export const about = {
 
 const experience = {
     title: "Experiencia",
-    description: "",
+    description: "esta en una descripcion sobre mi experiencia. esta seccion se actualizara con el tiempo mientras realizo trabajos exitosos para clientes satisfechos",
     items: [
         {
             company: "Freelancer",
@@ -64,12 +64,17 @@ const experience = {
             position: "Desarrollador Frontend",
             duration: "2024",
         },
+        {
+            company: "Don Oscar Carpinteria/ebanisteria",
+            position: "Desarrollador Frontend",
+            duration: "2024",
+        },
     ]
 };
 
 const education = {
     title: "Educacion",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, est?",
+    description: "esta es una descripcion sobre mi formacion, esta seccion se actualizara con el tiempo mientras aprendo y mejoro mis conocimientos.",
     items: [
         {
             institution: "Universidad Santiago mariño",
@@ -82,11 +87,20 @@ const education = {
             name: "MDN Guie for Web Developer",
             duration: "2023-2024",
         },
-
         {
             institution: "Curso Online",
             name: "Estudio AutoDidacta",
             duration: "2023-2024",
+        },
+        {
+            institution: "Curso Online",
+            name: "DSA (data structures and algorithms)",
+            duration: "2024",
+        },
+        {
+            institution: "Curso Online",
+            name: "Backend",
+            duration: "2024 - actualmente",
         },
 
     ]
@@ -94,7 +108,7 @@ const education = {
 
 const skills = {
     title: "Mis Habilidades",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nihil.",
+    description: "esta es una descripcion de mis habilidades, siempre se aprende algo nuevo cuando se trata de lenguajes y tecnologias. Es emocionante y gratificante mejorar cada dia, para mi las mejores sentimientos que puedo tener es compararme con mi yo de ayer y saber que mi yo de hoy es una mejor version. con el tiempo esta seccion se actualizando mientras mejore mis conocimientos, mis fundamentos en lenguajes de programacion me permiten adaptarme a cualquier situacion y lenguaje que se requiera para el desarrollo, si no conozco la manera dare todo de mi para hasta lograrlo.",
     skillList: [
         {
             icon: <FaHtml5 />,

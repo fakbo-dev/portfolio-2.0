@@ -8,7 +8,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger }
     from "@/components/ui/tooltip";
 import Image from "next/image";
-import Image1 from "@/public/assets/thumb1.png";
+import Image1 from "@/public/assets/p1.png";
 import Image2 from "@/public/assets/thumb2.png";
 import Image3 from "@/public/assets/thumb3.png";
 
@@ -20,21 +20,24 @@ const projects = [
         num: "01",
         category: "frontend Project",
         title: "Project 1",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, in?",
+        description: "Pagina principal para Negocio de carpinteria/ebanisteria",
         stack: [
             {
-                name: "html 5"
+                name: "react"
             },
             {
-                name: "css 3"
+                name: "tailwindcss"
             },
             {
-                name: "JavaScript"
+                name: "nextjs"
+            },
+            {
+                name: "shadcn ui"
             },
         ],
         image: Image1,
-        github: "",
-        live: "",
+        github: "https://github.com/fakbo-dev/D.O.N-Oscar-Landing-Page",
+        live: "https://d-o-n-oscar-landing-page.vercel.app/",
     },
     {
         num: "02",
@@ -167,7 +170,7 @@ const Work = () => {
                                         {/* image */}
                                         <div className="relative w-full h-full ">
                                             <Image src={project.image} fill className="object-cover"
-                                                alt="" />
+                                                alt="project Image" />
                                         </div>
                                     </div>
                                 </SwiperSlide>
