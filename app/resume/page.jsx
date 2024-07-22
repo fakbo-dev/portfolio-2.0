@@ -52,13 +52,18 @@ export const about = {
 
 const experience = {
     title: "Experiencia",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, est?",
+    description: "",
     items: [
         {
             company: "Freelancer",
             position: "Desarrollador Frontend",
             duration: "2023 - Actualmente",
-        }
+        },
+        {
+            company: "nm-chemical",
+            position: "Desarrollador Frontend",
+            duration: "2024",
+        },
     ]
 };
 
