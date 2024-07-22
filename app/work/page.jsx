@@ -109,7 +109,7 @@ const Work = () => {
                             {project.stack.map(({ name }, i) => (
                                 <li
                                     key={i}
-                                    className="text-xl text-accent"
+                                    className="xl:text-xl text-base text-accent"
                                 >
                                     {name}{i !== project.stack.length - 1 && ","}
                                 </li>
