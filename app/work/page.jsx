@@ -9,8 +9,9 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger }
     from "@/components/ui/tooltip";
 import Image from "next/image";
 import Image1 from "@/public/assets/p1.png";
-import Image2 from "@/public/assets/thumb2.png";
-import Image3 from "@/public/assets/thumb3.png";
+import Image2 from "@/public/assets/p2.png";
+import Image3 from "@/public/assets/p3.png";
+import Image4 from "@/public/assets/p4.png";
 
 // Component
 import WorkSliderBtns from "@/components/WorkSliderBtns";
@@ -18,7 +19,7 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: "01",
-        category: "frontend Project",
+        category: "DON Oscar",
         title: "Project 1",
         description: "Pagina principal para Negocio de carpinteria/ebanisteria",
         stack: [
@@ -31,6 +32,12 @@ const projects = [
             {
                 name: "nextjs"
             },
+            {
+                name: "shadcn ui"
+            },
+            {
+                name: "scroll animation"
+            },
         ],
         image: Image1,
         github: "https://github.com/fakbo-dev/D.O.N-Oscar-Landing-Page",
@@ -38,43 +45,73 @@ const projects = [
     },
     {
         num: "02",
-        category: "frontend Project",
+        category: "Pokedex api",
         title: "Project 2",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, in?",
+        description: "Una pokedex usando la api de pokeapi y recibiendo datos de un servidor externo.",
         stack: [
             {
-                name: "html 5"
+                name: "react"
             },
             {
-                name: "css 3"
+                name: "tailwindcss"
             },
             {
-                name: "JavaScript"
+                name: "nextjs"
             },
+            {
+                name: "Fetching data from API"
+            },
+            {
+                name: "react Hooks"
+            },
+
         ],
         image: Image2,
-        github: "",
-        live: "",
+        github: "https://github.com/fakbo-dev/pokedex-api-V2",
+        live: "https://pokedex-api-v2.vercel.app/",
     },
     {
         num: "03",
-        category: "frontend Project",
+        category: "Snake Game",
         title: "Project 3",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, in?",
+        description: "un simple juego de la serpiente hecho con typescript y intervalos de js sin usar canvas.",
         stack: [
             {
-                name: "html 5"
+                name: "html5"
             },
             {
-                name: "css 3"
+                name: "css3"
             },
             {
-                name: "JavaScript"
+                name: "typescript"
             },
         ],
         image: Image3,
-        github: "",
-        live: "",
+        github: "https://github.com/fakbo-dev/snake-game-with-ts",
+        live: "https://snake-game-with-ts.vercel.app/",
+    },
+    {
+        num: "04",
+        category: "Portafolio",
+        title: "Project 3",
+        description: "mi portafolio que contiene todos mis conocimientos hecho con nextjs animado con framer motion y utilizando shadc ui para la interfaz de usuario.",
+        stack: [
+            {
+                name: "nextjs"
+            },
+            {
+                name: "tailwindcss"
+            },
+            {
+                name: "framer motion"
+            },
+            {
+                name: "react"
+            },
+        ],
+        image: Image4,
+        github: "https://github.com/fakbo-dev/portfolio-2.0",
+        live: "https://portafolio-tau-bay-37.vercel.app/",
     },
 ]
 
@@ -105,7 +142,7 @@ const Work = () => {
                         {/* Project Description */}
                         <p className="text-white/60 ">{project.description}</p>
                         {/* Stack */}
-                        <ul className="flex gap-4">
+                        <ul className="flex gap-4 flex-col md:flex-row lg:flex-row">
                             {project.stack.map(({ name }, i) => (
                                 <li
                                     key={i}
@@ -121,7 +158,7 @@ const Work = () => {
                         {/* button */}
                         <div className="flex items-center gap-4">
                             {/* Live project Button */}
-                            <Link href={project.live}>
+                            <Link href={project.live} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -135,7 +172,7 @@ const Work = () => {
                             </Link>
 
                             {/* Github Code */}
-                            <Link href={project.github}>
+                            <Link href={project.github} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
