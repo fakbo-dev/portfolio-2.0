@@ -93,7 +93,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 value={value.subject} />
                             {/* Btn */}
-                            <Link href={`https://wa.me/584123550465?text=nombre:+${encodeURIComponent(value.firstname)}+${encodeURIComponent(value.lastname)}%0Aemail:+${encodeURIComponent(value.email)}%0Atelefono:+${encodeURIComponent(value.phone)}%0AASUNTO%0A${encodeURIComponent(value.subject)}`} target="_BLANK" className="py-[15px] px-[20px] bg-accent rounded-md text-white/60">
+                            <Link href={`https://wa.me/584123550465?text=nombre:+${encodeURIComponent(value.firstname)}+${encodeURIComponent(value.lastname)}%0Aemail:+${encodeURIComponent(value.email)}%0Atelefono:+${encodeURIComponent(value.phone)}%0AASUNTO%0A${encodeURIComponent(value.subject)}`} target="_BLANK" className="py-[15px] px-[20px] bg-accent rounded-md text-black">
                                 Enviar Mensaje
                             </Link>
                         </form>
