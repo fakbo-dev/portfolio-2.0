@@ -20,7 +20,7 @@ const info = [
     {
         icon: <FaMapMarkerAlt />,
         title: "Direccion",
-        description: "Venezuela. Carabobo, Valencia Urb. Isabelica Sector 7",
+        description: "Valencia, Venezuela",
     },
 ]
 import { motion } from "framer-motion";
