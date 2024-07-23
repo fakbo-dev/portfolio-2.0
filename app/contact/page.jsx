@@ -24,7 +24,33 @@ const info = [
     },
 ]
 import { motion } from "framer-motion";
+import { useState } from "react";
+import Link from "next/link";
+
+const initValues = { firstname: "", lastname: "", email: "", phone: "", services: "", subject: "", };
+const initState = { value: initValues };
 const Contact = () => {
+    const [state, setState] = useState(initState);
+
+    const { value } = state;
+
+    const handleChange = ({ target }) => {
+        setState((prev) => ({
+            ...prev,
+            value: {
+                ...prev.value,
+                [target.name]: target.value
+            }
+        }))
+    };
+
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        setState((prev) => ({
+            ...prev,
+            isLoading: true,
+        }))
+    }
     return (
         <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
             className="py-5"
@@ -37,32 +63,39 @@ const Contact = () => {
                             <h3 className="text-4xl text-accent">Trabajemos juntos</h3>
                             <p className="text-white/60">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, quo!</p>
                             {/* input */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Input type="firstname" placeholder="Nombre" />
-                                <Input type="lastname" placeholder="Apellido" />
-                                <Input type="email" placeholder="Email" />
-                                <Input type="phone" placeholder="Telefono" />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6" is>
+                                <Input type="firstname" placeholder="Nombre" name="firstname" onChange={handleChange} value={value.firstname} />
+                                <Input type="lastname" placeholder="Apellido" name="lastname" onChange={handleChange} value={value.lastname} />
+                                <Input type="email" placeholder="Email" name="email" onChange={handleChange} value={value.email} />
+                                <Input type="phone" placeholder="Telefono" name="phone" onChange={handleChange} value={value.phone} />
                             </div>
                             {/* Select */}
-                            <Select>
+                            {/* <Select>
                                 <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Elige un servicio" />
+                                    <SelectValue placeholder="Elige un servicio" name="services" onChange={handleChange} value={value.services} />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
-                                        <SelectLabel>
+                                        <SelectLabel onChange={handleChange}>
                                             Selecciona un servicio
                                         </SelectLabel>
-                                        <SelectItem value="cst">Desarrollo Web</SelectItem>
-                                        <SelectItem value="est">Diseño UI/UX</SelectItem>
+                                        <SelectItem value="cst" >Desarrollo Web</SelectItem>
+                                        <SelectItem value="dst" >Diseño UI/UX</SelectItem>
+                                        <SelectItem value="ast" >SEO</SelectItem>
+                                        <SelectItem value="xst" >Problem Solving</SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
-                            </Select>
+                            </Select> */}
                             {/* Textarea */}
                             <Textarea className="h-[300px]"
-                                placeholder="Escribe tu mensaje aqui" />
+                                placeholder="Escribe tu mensaje aqui"
+                                name="subject"
+                                onChange={handleChange}
+                                value={value.subject} />
                             {/* Btn */}
-                            <Button size="md" className="max-w-40">Enviar Mensaje</Button>
+                            <Link href={`https://wa.me/584123550465?text=nombre:+${encodeURIComponent(value.firstname)}+${encodeURIComponent(value.lastname)}%0Aemail:+${encodeURIComponent(value.email)}%0Atelefono:+${encodeURIComponent(value.phone)}%0AASUNTO%0A${encodeURIComponent(value.subject)}`} target="_BLANK" className="py-[15px] px-[20px] bg-accent rounded-md text-black">
+                                Enviar Mensaje
+                            </Link>
                         </form>
                     </div>
                     {/* Info */}

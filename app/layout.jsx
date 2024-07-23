@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Mauricio's Porfolio",
+  title: "Mauricio's Portfolio",
   description: "Portafolio de Mauricio Oropeza hecho con nextjs",
 };
 
