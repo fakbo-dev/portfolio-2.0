@@ -61,7 +61,7 @@ const Contact = () => {
                     <div className="xl:w-[54%] order-2 xl:order-none">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Trabajemos juntos</h3>
-                            <p className="text-white/60">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, quo!</p>
+                            <p className="text-white/60">Si estas interesado contactame!</p>
                             {/* input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6" is>
                                 <Input type="firstname" placeholder="Nombre" name="firstname" onChange={handleChange} value={value.firstname} />
@@ -93,7 +93,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 value={value.subject} />
                             {/* Btn */}
-                            <Link href={`https://wa.me/584123550465?text=nombre:+${encodeURIComponent(value.firstname)}+${encodeURIComponent(value.lastname)}%0Aemail:+${encodeURIComponent(value.email)}%0Atelefono:+${encodeURIComponent(value.phone)}%0AASUNTO%0A${encodeURIComponent(value.subject)}`} target="_BLANK" className="py-[15px] px-[20px] bg-accent rounded-md text-black">
+                            <Link href={`https://wa.me/584123550465?text=nombre:+${encodeURIComponent(value.firstname)}+${encodeURIComponent(value.lastname)}%0Aemail:+${encodeURIComponent(value.email)}%0Atelefono:+${encodeURIComponent(value.phone)}%0AASUNTO%0A${encodeURIComponent(value.subject)}`} target="_BLANK" className="py-[15px] px-[20px] bg-accent rounded-md text-white/60">
                                 Enviar Mensaje
                             </Link>
                         </form>
