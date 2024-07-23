@@ -11,6 +11,9 @@
   <li><a href="https://reactjs.org/">React</a></li>
   <li><a href="https://nextjs.org/">Nextjs</a></li>
   <li><a href="https://tailwindcss.com/">Tailwindcss</a></li>
+  <li><a href="https://www.radix-ui.com/">radix-ui</a></li>
+  <li><a href="https://swiperjs.com/">Swiper</a></li>
+  <li><a href="https://www.tailwindcss-animated.com/">Tailwindcss-animate</a></li>
   <li><a href="https://www.framer.com/motion/">Framer Motion</a></li>
   <li><a href="https://ui.shadcn.com/">Shadcn ui</a></li>
 </ul>
