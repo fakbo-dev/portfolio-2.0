@@ -15,7 +15,7 @@
   <li><a href="https://ui.shadcn.com/">Shadcn ui</a></li>
 </ul>
 
-## ⚙️ Requirements
+## ⚙️ requerimientos
 
 <ul>
   <li><a href="https://git-scm.com/">Git</a></li>
@@ -23,7 +23,7 @@
   <li><a href="https://www.npmjs.com/">NPM</a></li>
 </ul>
 
-## 🚀 Installation
+## 🚀 Instalaccion
 
 ```
 $ npm install
