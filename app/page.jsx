@@ -19,14 +19,12 @@ function Home() {
             {/* Btn and socials */}
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="/assets/mauricio-oropeza.pdf" download>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="uppercase flex items-center gap-2">
-                  <span>Descarga mi CV</span>
-                  <FiDownload />
-                </Button>
+              <Link
+                href="/assets/mauricio-oropeza.pdf"
+                download
+                className=" justify-center whitespace-nowrap rounded-full  font-semibold ring-offset-white transition-all border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary uppercase flex items-center gap-2 h-[56px] px-8 text-sm  tracking-[2px]">
+                <span>Descarga mi CV</span>
+                <FiDownload />
               </Link>
               <div className="mb-8 xl:mb-0">
                 <Socials containerStyles="flex gap-6" iconStyle="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" />
