@@ -19,7 +19,7 @@ const services = [
     {
         num: "03",
         title: "Diseño Web",
-        description: "El diseño web abarca muchas habilidades y disciplinas diferentes en la producción y mantenimiento de sitios web. Las diferentes áreas del diseño web incluyen diseño gráfico web; diseño de interfaz; creación, incluido código estandarizado y software propietario; diseño de experiencia de usuario; y optimización de motores de búsqueda. A menudo, muchas personas trabajarán en equipos y cubrirán diferentes aspectos del proceso de diseño, aunque algunos diseñadores los cubrirán todos.",
+        description: "El diseño web abarca muchas habilidades y disciplinas diferentes en la producción y mantenimiento de sitios web. Las diferentes áreas del diseño web incluyen diseño gráfico web; diseño de interfaz; creación, incluido código estandarizado y software propietario; diseño de experiencia de usuario; y optimización de motores de búsqueda. A menudo, muchas personas trabajarán en equipos y cubrirán diferentes aspectos del proceso de diseño.",
         href: "/work",
     },
     {

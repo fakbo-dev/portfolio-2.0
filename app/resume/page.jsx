@@ -1,9 +1,11 @@
 "use client";
 import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaGitAlt, FaGithub, FaNodeJs, FaTerminal, FaNpm } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiRedux } from "react-icons/si";
+import { SiTypescript, SiRedux, SiExpress, SiShadcnui, SiNotion, SiSwiper } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { BsBootstrap } from "react-icons/bs";
+
 // Component
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -24,8 +26,8 @@ export const about = {
             fieldValue: "+58 412-355-0465",
         },
         {
-            fieldName: "Discord",
-            fieldValue: "fakbo",
+            fieldName: "Twitter",
+            fieldValue: "Fakbo Dev",
         },
         {
             fieldName: "Nacionalidad",
@@ -108,7 +110,7 @@ const education = {
 
 const skills = {
     title: "Mis Habilidades",
-    description: "esta es una descripcion de mis habilidades, siempre se aprende algo nuevo cuando se trata de lenguajes y tecnologias. Es emocionante y gratificante mejorar cada dia, para mi las mejores sentimientos que puedo tener es compararme con mi yo de ayer y saber que mi yo de hoy es una mejor version. con el tiempo esta seccion se actualizando mientras mejore mis conocimientos, mis fundamentos en lenguajes de programacion me permiten adaptarme a cualquier situacion y lenguaje que se requiera para el desarrollo, si no conozco la manera dare todo de mi para hasta lograrlo.",
+    description: "esta es una descripcion de mis habilidades, siempre se aprende algo nuevo cuando se trata de lenguajes y tecnologias. Es emocionante y gratificante mejorar cada dia, para mi el mejor sentimiento que puedo tener es compararme con mi yo de ayer y saber que mi yo de hoy es una mejor version. con el tiempo esta seccion se actualizando mientras mejore mis conocimientos, mis fundamentos en lenguajes de programacion me permiten adaptarme a cualquier situacion y lenguaje que se requiera para el desarrollo, si no conozco la manera dare todo de mi para hasta lograrlo.",
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -169,8 +171,27 @@ const skills = {
         {
             icon: <FaNpm />,
             name: "Node Package Manager"
-        }
-
+        },
+        {
+            icon: <SiExpress />,
+            name: "ExpressJs"
+        },
+        {
+            icon: <SiShadcnui />,
+            name: "Shadcnui",
+        },
+        {
+            icon: <SiNotion />,
+            name: "Notion"
+        },
+        {
+            icon: <BsBootstrap />,
+            name: "Boostrap"
+        },
+        {
+            icon: <SiSwiper />,
+            name: "Swiper"
+        },
     ]
 };
 const Resume = () => {
@@ -253,7 +274,7 @@ const Resume = () => {
                         </TabsContent>
                         {/* Skills */}
                         <TabsContent value="skills" className="w-full">
-                            <div className="flex flex-col gap-[30px]">
+                            <div className="flex flex-col gap-[30px] mb-4">
 
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left ">
                                     <h3 className="text-4xl font-bold">{skills.title}</h3>
