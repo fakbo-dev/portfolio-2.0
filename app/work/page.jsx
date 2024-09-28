@@ -12,7 +12,7 @@ import Image1 from "@/public/assets/p1.png";
 import Image2 from "@/public/assets/p2.png";
 import Image3 from "@/public/assets/p3.png";
 import Image4 from "@/public/assets/p4.png";
-
+import Image5 from "@/public/assets/p5.png"
 // Component
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
@@ -113,6 +113,27 @@ const projects = [
         github: "https://github.com/fakbo-dev/portfolio-2.0",
         live: "https://portafolio-tau-bay-37.vercel.app/",
     },
+    {
+        num: "05",
+        category: "Alpaca Generator",
+        title: "Project 4",
+        description: "Interfaz para crear tu propia foto de perfil personalizada de una alpaca con capacidad de descarga",
+        stack: [
+            {
+                name: "react"
+            },
+            {
+                name: "tailwindcss"
+            },
+            {
+                name: "vite"
+            },
+
+        ],
+        image: Image5,
+        github: "https://github.com/fakbo-dev/alpaca-generator",
+        live: "https://alpaca-generator-tawny.vercel.app/",
+    }
 ]
 
 const Work = () => {
